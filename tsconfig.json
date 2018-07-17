@@ -1,0 +1,23 @@
+{
+  "extends": "./node_modules/@ioffice/tslint-config-ioffice/tsconfig.core.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+    },
+    "lib": [
+      "es6"
+    ],
+    "rootDir": "src",
+    "target": "es5"
+  },
+  "files": [
+    "src/main/index.ts",
+    "src/test/index.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}

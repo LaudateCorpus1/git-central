@@ -1,0 +1,17 @@
+.idea
+build
+node_modules
+src
+.editorconfig
+.gitignore
+.npmignore
+Makefile
+tsconfig.json
+tslint.json
+CONTRIBUTING.md
+version.json
+*.build.cmd
+yarn.lock
+tcBuilderMessages.json
+.travis.yml
+.teamcity.json

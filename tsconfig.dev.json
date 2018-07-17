@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "declaration": false,
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+    },
+    "lib": [
+      "es6"
+    ],
+    "rootDir": "src",
+    "target": "es5"
+  },
+  "files": [
+    "src/main/index.ts",
+    "src/test/index.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}
