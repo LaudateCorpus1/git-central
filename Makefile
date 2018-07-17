@@ -1,12 +1,10 @@
 ## Tasks
 
 run: build
+	electron .
+
+test: build
 	tc-builder run
-
-preRelease: build
-	PRERELEASE=true tc-builder run
-
-test: run
 
 ## Dependencies
 

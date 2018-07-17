@@ -1,7 +1,7 @@
 {
   "name": "git-central",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "build/main/index.js",
   "repository": "https://github.com/jmlopez-rod/git-central.git",
   "author": "Manuel Lopez",
   "license": "MIT",
