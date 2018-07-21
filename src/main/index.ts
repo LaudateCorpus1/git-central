@@ -4,15 +4,16 @@ import { app, BrowserWindow } from 'electron';
 // be closed automatically when the JavaScript object is garbage collected.
 let win: BrowserWindow | null;
 
-const template = `
-<html>
-<body>
-<h1>Hello World</h1>
-</body>
-</html>
-`;
+// const template = `
+// <html>
+// <body>
+// <h1>Hello World</h1>
+// </body>
+// </html>
+// `;
 
 function createWindow () {
+  console.log('app path:', app.getPath('userData'));
   // Create the browser window.
   win = new BrowserWindow({
     width: 800,
@@ -20,9 +21,9 @@ function createWindow () {
     title: 'Repo Desktop',
   });
 
-  win.loadURL(`data:text/html;charset=utf-8,${template}`);
+  // win.loadURL(`data:text/html;charset=utf-8,${template}`);
   // and load the index.html of the app.
-  // win.loadFile('index.html');
+  win.loadFile('build/main/index.html');
 
   // Open the DevTools.
   // win.webContents.openDevTools();
@@ -50,6 +51,8 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
+
+
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the

@@ -1,7 +1,10 @@
 ## Tasks
 
-run: build
-	electron .
+run: build www
+	webpack -w & electron .
+
+webpack:
+	webpack -w
 
 test: build
 	tc-builder run
@@ -13,6 +16,9 @@ build: clean
 
 clean: FORCE
 	rm -rf build
+
+www:
+	cp src/main/front-end/index.html build/main/index.html
 
 info:
 	node --version
