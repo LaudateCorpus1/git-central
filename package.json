@@ -33,7 +33,7 @@
     "core-js": "2.5.7",
     "electron": "2.0.5",
     "mocha": "5.2.0",
-    "moment": "2.22.2",
+    "moment": "2.29.4",
     "progress": "2.0.0",
     "raw-loader": "0.5.1",
     "reflect-metadata": "0.1.12",
